@@ -30,7 +30,8 @@
 
 1. 安装插件
 2. 在编辑器设置中配置外部编辑器路径
-3. 点击按钮进行切换
+3. 执行参数配置为 {project} --goto {file}:{line}:{col}
+4. 点击按钮进行切换
 
 <img width="1354" height="1097" alt="image" src="https://github.com/user-attachments/assets/7a5c6994-7852-4a4a-b805-34f115924dd7" />
 
