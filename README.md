@@ -31,7 +31,9 @@
 1. 安装插件
 2. 在编辑器设置中配置外部编辑器路径
 3. 点击按钮进行切换
+
 <img width="1354" height="1097" alt="image" src="https://github.com/user-attachments/assets/7a5c6994-7852-4a4a-b805-34f115924dd7" />
+
 4. 如果想要实现快捷键的自定义，在输入映射中添加一个名为“external_code_editor_open”的动作即可
 
 <img width="1804" height="1097" alt="image" src="https://github.com/user-attachments/assets/80030562-3cd7-42be-a1ed-3911f8e8db8a" />
