@@ -185,7 +185,7 @@ func _open_current_script_externally() -> void:
 	# 光标行列
 	var caret := _get_caret_position(script_editor)
 	var exec_flags := "{project} --goto {file}:{line}:{col}"
-	if editor_settings.has_setting(EXEC_FLAGS_SETTING):
+	if editor_settings.get_setting(EXEC_FLAGS_SETTING) != "":
 		exec_flags = editor_settings.get_setting(EXEC_FLAGS_SETTING)
 	# 绝对路径
 	var absolute_script_path := ProjectSettings.globalize_path(resource_path)
