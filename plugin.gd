@@ -92,14 +92,14 @@ func _apply_shortcut_to_button() -> void:
 
 ## 优先从 InputMap 构造快捷键
 func _build_input_map_shortcut() -> Shortcut:
-	InputMap.load_from_project_settings()
-	if not InputMap.has_action(INPUT_ACTION):
+	var key := "input/%s" % INPUT_ACTION
+	if not ProjectSettings.has_setting(key):
 		return null
-	var events := InputMap.action_get_events(INPUT_ACTION)
+	var events := ProjectSettings.get_setting(key)
 	if events.is_empty():
 		return null
 	var shortcut := Shortcut.new()
-	shortcut.events = events.duplicate()
+	shortcut.events = events["events"].duplicate()
 	shortcut.resource_name = "使用外部编辑器打开脚本"
 	return shortcut
 
